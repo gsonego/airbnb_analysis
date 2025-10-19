@@ -14,7 +14,7 @@ This diary summarizes the key project-related discussions and progress between g
 
 - Niall noted minimal overall cleaning needed based on initial exploration.
 
-- Niall shared additional notes: Consider removing very old "last_review" entries if they indicate non-operational listings; convert "price" to numeric for statistical calculations; identify and potentially cap/remove "price" outliers using box plots; prepare for linear regression by encoding categorical variables like `room_type` (e.g., one-hot encoding into `room_type_shared`,`room_type_apartment`, etc.).
+- Niall shared additional notes: Consider removing very old "last_review" entries if they indicate non-operational listings; convert `price` to numeric for statistical calculations; identify and potentially cap/remove `price` outliers using box plots; prepare for linear regression by encoding categorical variables like `room_type` (e.g., one-hot encoding into `room_type_shared`,`room_type_apartment`, etc.).
 
 ## 25/09/2025
 
@@ -31,13 +31,13 @@ Niall provided the link to Inside Airbnb, specifying the Ireland dataset (third 
 
 - Discussed parsing a new `county` column from `region_parent_name` for cleaner analysis—agreed this is straightforward.
 
-- Reviewed unique counties extracted: ['Wicklow' 'Cork' 'Limerick' 'Galway' 'Leitrim' 'Fingal' 'Mayo' 'Waterford' 'Kerry' 'Meath' 'Wexford' 'Offaly' 'Sligo' 'Clare' 'Tipperary' 'Roscommon' 'Dublin' 'South Dublin' 'Dun Laoghaire-rathdown' 'Monaghan' 'Cavan' 'Louth' 'Kildare' 'Kilkenny' 'Donegal' 'Westmeath' 'Laois' 'Longford' 'Carlow'].
+- Reviewed unique counties extracted: ['Wicklow' 'Cork' 'Limerick' 'Galway', etc..].
 
-- Agreed to merge "South Dublin" and "Dun Laoghaire-rathdown" into "Dublin" for consistency, resulting in: ['Wicklow' 'Cork' 'Limerick' 'Galway' 'Leitrim' 'Fingal' 'Mayo' 'Waterford' 'Kerry' 'Meath' 'Wexford' 'Offaly' 'Sligo' 'Clare' 'Tipperary' 'Roscommon' 'Dublin' 'Monaghan' 'Cavan' 'Louth' 'Kildare' 'Kilkenny' 'Donegal' 'Westmeath' 'Laois' 'Longford' 'Carlow'].
+- Agreed to merge "South Dublin" and "Dun Laoghaire-rathdown" into "Dublin" for consistency, resulting in: ['Wicklow' 'Cork' 'Limerick' 'Galway' ... 'Dublin' ...].
 
 - Guilherme shared GitHub repo containing: Dataset in XLSX and CSV formats; initial notebooks for investigation and cleaning (Airbnb_Customer.ipynb and Airbnb_Investor.ipynb, tailored to different user angles); cleaned datasets (Ireland_Airbnb_Listing\_\_Detailed\_\_Customer.csv and Ireland_Airbnb_Listing\_\_Detailed\_\_Investor.csv).
 
-- Niall outlined data cleaning priorities: Replace missing "reviews_per_month" with 0 (logical for no-review listings); handle "price" outliers post-box plot analysis (to discuss further); encode categorical variables for regression (e.g., one-hot for "room_type"); remove "$" from "price" and convert to numeric (optionally to Euros using static rate); discuss feature selection for irrelevant columns on next call.
+- Niall outlined data cleaning priorities: Replace missing `reviews_per_month` with 0 (logical for no-review listings); handle "price" outliers post-box plot analysis (to discuss further); encode categorical variables for regression (e.g., one-hot for "room_type"); remove "$" from "price" and convert to numeric (optionally to Euros using static rate); discuss feature selection for irrelevant columns on next call.
 
 # 02/10/2025
 
@@ -53,22 +53,22 @@ Guilherme requested and received access; provided screenshot feedback.
 
 # 08/10/2025
 
-Niall proposed adding a "number_of_amenities" column by counting items in the "amenities" column to enhance recommendation features (e.g., for customer budget/location-based top listings).
+Niall proposed adding a `number_of_amenities` column by counting items in the `amenities` column to enhance recommendation features (e.g., for customer budget/location-based top listings).
 Agreed to implement; Niall to provide code.
 
 # 10/10/2025
 
 Niall shared KPI and metric ideas for dashboards, derived from key variables:
 
-Price: Average Daily Rate (ADR) = AVERAGE(price).
-Number_of_reviews: Total Listings Count = COUNT(id).
-Number_of_reviews_ltm: Average Reviews (Last 12 Months) = AVERAGE(number_of_reviews_ltm).
-Review_scores_rating: Average Guest Rating = AVERAGE(review_scores_rating).
-Availability_365: Average Occupancy Rate = 1 - (AVERAGE(availability_365)/365).
-Host_is_superhost: Superhost Percentage = COUNT(id where host_is_superhost=TRUE)/COUNT(id).
+- Price: Average Daily Rate (ADR)
+- Number_of_reviews: Total Listings Count
+- Number_of_reviews_ltm: Average Reviews (Last 12 Months)
+- Review_scores_rating: Average Guest Rating
+- Availability_365: Average Occupancy Rate
+- Host_is_superhost: Superhost Percentage
 
 Noted flexibility to test other review variables.
-Guilherme raised concerns about "price" outliers (e.g., dataset shows 50k+ but actual Airbnb site listings are 1203€, 609€, 574€); suggested removing outliers or invalid entries.
+Guilherme raised concerns about `price` outliers (e.g., dataset shows 50k+ but actual Airbnb site listings are 1203€, 609€, 574€); suggested removing outliers or invalid entries.
 Agreed to sync on Sunday for dashboard support; Niall offered to help with Tableau.
 
 # 11/10/2025
@@ -83,3 +83,7 @@ Guilherme shared class resources: YouTube video on Tableau; townlands.ie downloa
 # 14/10/2025
 
 No new project decisions; confirmed ongoing work on data cleaning code.
+
+# 19/10/2025
+
+Project deadline
