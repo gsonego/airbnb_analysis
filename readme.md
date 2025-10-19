@@ -29,6 +29,11 @@ worked on his own from the point of view of an Investor.
 
 Please, find more information on the Group Report found in this repository.
 
+## Customer track publishing
+
+The customer approach dashboard is available at:
+https://app.powerbi.com/groups/me/reports/44224077-0838-4f3b-95e4-c2e0a32d7776/10415a15ed93050c8050?experience=power-bi
+
 ## Repository Content
 
 Repository link: https://github.com/gsonego/airbnb_analysis
@@ -36,11 +41,10 @@ Repository link: https://github.com/gsonego/airbnb_analysis
 - Readme.md --> This readme file
 - listing.csv --> Original dataset used for visualizations
 - Ireland_Airbnb_Listing\_\_Detailed.xlsx --> A Excel dataset version for initial planning
-- Ireland_Airbnb_Listing\_\_Detailed.csv --> A optimized version based on the source dataset
 - Group_Report.md --> The Group report for this project
 - Diary.md --> The group diary
 
-- Consumer folder
+- Customer folder
 
   - Airbnb_Customer.ipynb --> Notebook file for the cleanup process
   - Ireland_Airbnb_Listing\_\_Detailed\_\_Customer.csv --> The cleaned-up dataset for the Investor track
@@ -49,5 +53,9 @@ Repository link: https://github.com/gsonego/airbnb_analysis
   - Airbnb_Investor.ipynb --> Notebook file for the cleanup process
   - Ireland_Airbnb_Listing\_\_Detailed\_\_Investor.csv --> The cleaned-up dataset for the Investor track
   - AirBnbInvestor.twb --> Tableau file for the Investor track
+  - AirBnbInvestor.twbx --> Tableau detached file
   - AirBnbInvestor.hyper --> Tableau hyper base for the dashboards
   - county_maps folder --> Shape files for Ireland counties
+
+\*\* The Investor track is also available on:
+-- https://public.tableau.com/app/profile/guilherme.sonego/viz/AirBnb__Investor/Airbnb-Ireland?publish=yes
