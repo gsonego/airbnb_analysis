@@ -2,7 +2,7 @@
 
 ## Overview
 
-This diary summarizes the key project-related discussions and progress between group members Niall and Guilherme, focusing on the Airbnb Ireland dataset analysis for the Data Visualisation group project. Entries are chronological and include only relevant interactions, decisions, and tasks related to data selection, cleaning, exploration, and dashboard development.
+This diary summarizes the key project-related discussions and progress between group members Niall and Guilherme, focusing on the Airbnb Ireland dataset analysis for the Data Visualisation group project. Entries are chronological and include only relevant interactions, decisions, and tasks related to data selection, cleaning, exploration, and dashboard development. As per Jacks recommendation, we are using a shared project diary file as no situation exists for a individual diary file.
 
 ## 24/09/2025
 
