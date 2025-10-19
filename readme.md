@@ -31,6 +31,8 @@ Please, find more information on the Group Report found in this repository.
 
 ## Repository Content
 
+Repository link: https://github.com/gsonego/airbnb_analysis
+
 - Readme.md --> This readme file
 - listing.csv --> Original dataset used for visualizations
 - Ireland_Airbnb_Listing\_\_Detailed.xlsx --> A Excel dataset version for initial planning
